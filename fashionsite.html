@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>W-Clothings | Premium Fashion & Tech</title>
+  <link rel="stylesheet" href="fashion.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <h1 class="logo">W-Clothings</h1>
+    <a href="fashioncart.html" style="text-decoration: none; color: white;">🛒 Cart</a>
+    <nav class="navbar" id="navMenu">
+      <div class="menu-icon" id="menuIcon">☰</div>
+      <ul class="nav-links">
+        <li><p>Crafted with precision. Styled for confidence.</p></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- TABS -->
+  <div class="tabIcon" id="tabIcon">⃛ </div>
+  <div class="tabs">
+    <div class="tab active" data-tab="overview">Overview</div>
+    <div class="tab" data-tab="pricing">Pricing</div>
+    <div class="tab" data-tab="features">Why Us?</div>
+    <div class="tab" data-tab="contact">Contact</div>
+  </div>
+
+  <div class="tab-contents">
+
+    <!-- OVERVIEW TAB -->
+    <div class="tab-content active" id="overview">
+      <section class="profile-section">
+        <div class="profile-card">
+          <h2>About W-Clothings</h2>
+          <p>W-Clothings is a premium fashion brand focused on quality tailoring, elegant designs, and timeless style. We believe clothing should speak confidence before you do.</p>
+          <button id="contactMeButton">Book a fitting</button>
+          <div class="messages">
+            <p class="message" id="profileMessage" style="font-size: 15px; margin-top: none; margin-bottom: none;">Our team will guide you through a personalized styling experience.</p>
+          </div>
+        </div>
+
+        <div class="profile-card profile-card--secondary">
+          <h2>Our Philosophy</h2>
+          <ul>
+            <li>Precision tailoring with attention to detail</li>
+            <li>Premium fabrics sourced for comfort and durability</li>
+            <li>Designs that blend tradition with modern fashion</li>
+            <li>A commitment to confidence, class, and quality</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="development-section">
+        <div class="layout-cards">
+          <button class="layout-card" data-target="tab-mobile">Ready to wear</button>
+          <button class="layout-card" data-target="tab-frontend">Custom Tailoring</button>
+          <button class="layout-card" data-target="tab-backend">Luxury Couture</button>
+        </div>
+
+        <div class="contents">
+          <p class="content" id="tab-mobile">Carefully designed outfits available for immediate purchase.</p>
+          <p class="content" id="tab-frontend">Personalized designs crafted to fit your body and style.</p>
+          <p class="content" id="tab-backend">Exclusive fashion pieces made for moments and high-profile Events</p>
+        </div>
+      </section>
+
+      <section class="section-cards">
+        <div class="section-card" data-target="design" style="background-image: url('fashionweb-images/women.jpeg'); max-height: 450px;">
+          <h3>Women's Collection</h3>
+          <p class="section-content">Explore our latest fashion pieces for Women, crafted with premium materials.</p>
+        </div>
+        <div class="section-card active" data-target="development" style="background-image: url('fashionweb-images/halffull.jpeg'); min-height: 520px;">
+          <h3>Men's Collection</h3>
+          <p class="section-content">Explore our latest fashion pieces for Men, crafted with premium materials.</p>
+        </div>
+        <div class="section-card" data-target="marketing" style="background-image: url('fashionweb-images/kids.jpeg'); max-height: 450px;">
+          <h3>Kid's Collection</h3>
+          <p class="section-content">Explore our latest fashion pieces for kids, crafted with premium materials.</p>
+        </div>
+     </section>
+
+      <div class="card-options">
+      	<div class="card-option" id="design">
+      		
+
+      		<!-- for women --> 
+
+      	<div class="show" style="width: 300px;">
+      		<div class="image-box">
+      			<img src="fashionweb-images/women.jpeg">
+      			<div class="add-to-cart"
+      		data-name="Luxury gown with top damask"
+      		data-price="80000"
+      		data-image="fashionweb-images/women.jpeg">🛒
+      	</div>
+      </div>
+      		  <h3>₦80,000</h3>
+      		<p>Luxury Gown with top quality Damask</p>
+      	</div>
+      	
+
+      	<div class="show">
+      		<div class="image-box">
+      			<img src="fashionweb-images/woman2.jpg">
+      			<div class="add-to-cart"
+      		data-name="Luxury red gown"
+      		data-price="35000"
+      		data-image="fashionweb-images/woman2.jpg">🛒
+      	</div>
+      </div>
+      		  <h3>₦35,000</h3>
+      		<p>Luxury Red Gown </p>
+      	</div>
+      	
+
+      	<div class="show">
+      		<div class="image-box">
+      			<img src="fashionweb-images/woman3.jpg">
+      			<div class="add-to-cart"
+      		data-name="Casual two pieces"
+      		data-price="20000"
+      		data-image="fashionweb-images/woman3.jpg">🛒
+      	</div>
+      </div>
+      		  <h3>₦20,000</h3>
+      		<p>Casual Two Pieces</p>
+      	</div>
+      	
+
+      	<div class="show">
+      		<div class="image-box">
+      			<img src="fashionweb-images/womanshort.jpg">
+      			<div class="add-to-cart"
+      		data-name="Skirt and Top"
+      		data-price="30000"
+      		data-image="fashionweb-images/womanshort.jpg">🛒
+      	</div>
+      </div>
+      		  <h3>₦30,000</h3>
+      		<p>Wide Short Skirt and Top, in any color</p>
+      	</div>
+      	
+
+      	<div class="show">
+      		<div class="image-box">
+      			<img src="fashionweb-images/woman4.jpg">
+      			<div class="add-to-cart"
+      		data-name="Date gown blue"
+      		data-price="40000"
+      		data-image="fashionweb-images/woman4.jpg">🛒
+      	</div>
+      </div>
+      		  <h3>₦40,000</h3>
+      		<p>Luxury Gown for Dates and Events, in any color</p>
+      	</div>
+      	
+
+      	<div class="show">
+      		<div class="image-box">
+      			<img src="fashionweb-images/woman5.jpg">
+      			<div class="add-to-cart"
+      		data-name="Flowered gown"
+      		data-price="45000"
+      		data-image="fashionweb-images/woman5.jpg">🛒
+      	</div>
+      </div>
+      		  <h3>₦45,000</h3>
+      		<p>Luxury Gown with Flower design</p>
+      	</div>
+      	
+
+      	<div class="show">
+      		<div class="image-box">
+      			<img src="fashionweb-images/woman6.jpg">
+      			<div class="add-to-cart"
+      		data-name="Black gown"
+      		data-price="45000"
+      		data-image="fashionweb-images/woman6.jpg">🛒
+      	</div>
+      </div>
+      		  <h3>₦45,000</h3>
+      		<p>Luxury Black Gown with Shinny Flower design</p>
+      	</div>
+      	
+
+      	<div class="show">
+      		<div class="image-box">
+      			<img src="fashionweb-images/woman7.jpg">
+      			<div class="add-to-cart"
+      		data-name="Gold gown"
+      		data-price="50000"
+      		data-image="fashionweb-images/woman7.jpg">🛒
+      	</div>
+      </div>
+      		  <h3>₦50,000</h3>
+      		<p>Luxury Gown with high quality golden fabric</p>
+      	</div>
+      	
+
+      	<div class="show">
+      		<div class="image-box">
+      			<img src="fashionweb-images/womanshirt.jpg">
+      			<div class="add-to-cart"
+      		data-name="Casual shirt"
+      		data-price="15000"
+      		data-image="fashionweb-images/womanshirt.jpg">🛒
+      	</div>
+      </div>
+      		  <h3>₦15,000</h3>
+      		<p>Casual shirt and short with stripes, in any color</p>
+      	</div>
+      	</div>
+
+      	<!--- for men ---> 
+
+      	<div class="card-option" id="development">
+      		<div class="show">
+      			<div class="image-box">
+      				<img src="fashionweb-images/shirt.jpg" class="frontview">
+      				<img src="fashionweb-images/backshirt.jpeg" class="backview">
+      				<div class="add-to-cart"
+      		data-name="Luxury button down shirt"
+      		data-price="35000"
+      		data-image="fashionweb-images/shirt.jpg">🛒
+      	</div>
+      </div>
+      				<h3>₦35,000</h3>
+      		<p>Luxury button down shirt with baggy pant</p>
+      	</div>
+
+      	<div class="show">
+      		<div class="image-box">
+      			<img src="fashionweb-images/greeneshiki.jpg">
+      			<div class="add-to-cart"
+      		data-name="Luxury eshiki"
+      		data-price="45000"
+      		data-image="fashionweb-images/greeneshiki.jpg">🛒
+      	</div>
+      		</div>
+      		<h3>₦45,000</h3>
+      		<p>Luxury modern Eshiki</p>
+      	</div>
+
+      	<div class="show">
+      		<div class="image-box">
+      			<img src="fashionweb-images/halfagbada.jpg">
+      			<div class="add-to-cart"
+      		data-name="Luxury agbada"
+      		data-price="100000"
+      		data-image="fashionweb-images/halfagbada.jpg">🛒
+      	</div>
+      		</div>
+      		<h3>₦100,000</h3>
+      		<p>Luxury Agbada with top quality fabric</p>
+      	</div>
+
+      	<div class="show">
+      		<div class="image-box">
+      			<img src="fashionweb-images/orange.jpg">
+      			<div class="add-to-cart"
+      		data-name="two pieces"
+      		data-price="40000"
+      		data-image="fashionweb-images/orange.jpg">🛒
+      	</div>
+      		</div>
+      		<h3>₦40,000</h3>
+      		<p>Smart Two pieces in any color</p>
+      	</div>
+
+      	<div class="show">
+      		<div class="image-box">
+      			<img src="fashionweb-images/man5.jpg">
+      			<div class="add-to-cart"
+      		data-name="two pieces eshiki"
+      		data-price="45000"
+      		data-image="fashionweb-images/man5.jpg">🛒
+      	</div>
+      		</div>
+      		<h3>₦45,000</h3>
+      		<p>Two pieces Eshiki, in any color and patterns</p>
+      	</div>
+
+      	<div class="show">
+      		<div class="image-box">
+      			<img src="fashionweb-images/man1.jpg">
+      			<div class="add-to-cart"
+      		data-name="navy blue khaftan"
+      		data-price="50000"
+      		data-image="fashionweb-images/man1.jpg">🛒
+      	</div>
+      		</div>
+      		<h3>₦50,000</h3>
+      		<p>Smart Khaftan for event and casual, in any color</p>
+      	</div>
+
+      	<div class="show">
+      		<div class="image-box">
+      			<img src="fashionweb-images/man2.jpg">
+      			<div class="add-to-cart"
+      		data-name="black khaftan"
+      		data-price="50000"
+      		data-image="fashionweb-images/man2.jpg">🛒
+      	</div>
+      		</div>
+      		<h3>₦50,000</h3>
+      		<p>Smart Khaftan for event and casual, in any color</p>
+      	</div>      	
+
+      	<div class="show">
+      		<div class="image-box">
+      			<img src="fashionweb-images/man3.jpg">
+      			<div class="add-to-cart"
+      		data-name="Jalabia"
+      		data-price="20000"
+      		data-image="fashionweb-images/man3.jpg">🛒
+      	</div>
+      		</div>
+      		<h3>₦20,000</h3>
+      		<p>Unisex Jalabia, in any color</p>
+      	</div>
+
+      	<div class="show">
+      		<div class="image-box">
+      			<img src="fashionweb-images/man4.jpg">
+      			<div class="add-to-cart"
+      		data-name="short khaftan"
+      		data-price="40000"
+      		data-image="fashionweb-images/man4.jpg">🛒
+      	</div>
+      		</div>
+      		<h3>₦40,000</h3>
+      		<p>Smart Khaftan for event and casual, in any color</p>
+      	</div>
+
+      	<div class="show">
+      		<div class="image-box">
+      			<img src="fashionweb-images/man6.jpg">
+      			<div class="add-to-cart"
+      		data-name="two pieces"
+      		data-price="40000"
+      		data-image="fashionweb-images/man6.jpg">🛒
+      	</div>
+      		</div>
+      		<h3>₦40,000</h3>
+      		<p>Smart Two pieces, in any color and patterns</p>
+      	</div>
+
+      	<div class="show">
+      		<div class="image-box">
+      			<img src="fashionweb-images/man7.jpg">
+      			<div class="add-to-cart"
+      		data-name="3 pieces agbada"
+      		data-price="100000"
+      		data-image="fashionweb-images/man7.jpg">🛒
+      	</div>
+      		</div>
+      		<h3>₦100,000</h3>
+      		<p>High Profile Three Pieces Agbada with full desgin, For Events</p>
+      	</div>
+
+      	</div>
+
+      	<!-- for kids -->
+
+      	<div class="card-option" id="marketing">
+      		<div class="show">
+      		<div class="image-box">
+      			<img src="fashionweb-images/kids1.jpg">
+      			<div class="add-to-cart"
+      		data-name="ankara for kids"
+      		data-price="15000"
+      		data-image="fashionweb-images/kids1.jpg">🛒
+      	</div>
+      		</div>
+      		<h3>₦15,000 (each)</h3>
+      		<p>Ankara style for kids</p>
+      	</div>
+
+      	<div class="show">
+      		<div class="image-box">
+      			<img src="fashionweb-images/kid2.jpg">
+      			<div class="add-to-cart"
+      		data-name="white on ankara"
+      		data-price="15000"
+      		data-image="fashionweb-images/kid2.jpg">🛒
+      	</div>
+      		</div>
+      		<h3>₦15,000</h3>
+      		<p>White on ankara pant</p>
+      	</div>
+
+      	<div class="show">
+      		<div class="image-box">
+      			<img src="fashionweb-images/kid3.jpg">
+      			<div class="add-to-cart"
+      		data-name="casual style"
+      		data-price="17000"
+      		data-image="fashionweb-images/kid3.jpg">🛒
+      	</div>
+      		</div>
+      		<h3>₦17,000</h3>
+      		<p>Casual style for boys, in any color</p>
+      	</div>
+
+      	<div class="show">
+      		<div class="image-box">
+      			<img src="fashionweb-images/kid4.jpg">
+      			<div class="add-to-cart"
+      		data-name="Yellow gown"
+      		data-price="17000"
+      		data-image="fashionweb-images/kid4.jpg">🛒
+      	</div>
+      		</div>
+      		<h3>₦17,000</h3>
+      		<p>Gown with jacket in any color</p>
+      	</div>
+
+      	<div class="show">
+      		<div class="image-box">
+      			<img src="fashionweb-images/kid5.jpg" class="frontview">
+      			<img src="fashionweb-images/kid6.jpg" class="backview">
+      			<div class="add-to-cart"
+      		data-name="Blue gown"
+      		data-price="15000"
+      		data-image="fashionweb-images/kid5.jpg">🛒
+      	</div>
+      		</div>
+      		<h3>₦15,000</h3>
+      		<p>Smart Blue Gown, in any color</p>
+      	</div>
+
+      	</div>
+      </div>
+
+
+      <section class="project-cards">
+        <div class="card" id="card-frontend">
+          <h3>Design</h3>
+          <p>Every piece begins with thoughtful design, balancing elegance and modern fashion trends.</p>
+        </div>
+        <div class="card" id="card-mobile-app">
+          <h3>Tailoring</h3>
+          <p>Precision measurements and expert craftsmanship ensure a perfect fit.</p>
+        </div>
+        <div class="card" id="card-styling">
+        	<h3>Styling</h3>
+        	<p>Complete your look with professional styling advice tailored to your personality.</p>
+        </div>
+      </section>
+
+      <section class="contact-form-section">
+        <form id="contactForm">
+          <input type="text" id="nameInput" placeholder="Enter your full name">
+          <p>We respond within 48 hours.</p>
+          <button type="submit">Submit</button>
+          <img src="fashionweb-images/background.jpg" alt="Fashion example">
+        </form>
+        <p id="feedback"></p>
+      </section>
+    </div>
+
+    <!-- PRICING TAB -->
+    <div class="tab-content" id="pricing">
+      <div class="accordion">
+        <div class="accordion-item">
+        	<div class="accordion-header"><h2>FAQs</h2></div>
+          <button class="accordion-header" data-accordion="services">What services do you offer?</button>
+          <div class="accordion-content" id="services"><p>High-quality fashion pieces with premium finishing.</p></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header" data-accordion="duration">How long is delivery?</button>
+          <div class="accordion-content" id="duration"><p>Normally 5–10 working days depending on order volume.</p></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header" data-accordion="custom">Do you accept custom orders?</button>
+          <div class="accordion-content" id="custom"><p>Yes! Contact Customer Service with your preferences.</p></div>
+        </div>
+      </div>
+
+      <div class="pricing-options">
+        <div class="pricing-card" data-target="basic">
+          <h2>Basic Package ₦30,000</h2>
+        </div>
+        <div class="pricing-card" data-target="medium">
+          <h2>Medium Package ₦70,000</h2>
+        </div>
+        <div class="pricing-card" data-target="premium">
+          <h2>Premium Package ₦100,000</h2>
+        </div>
+
+        <div class="pricing-contents">
+          <div class="pricing-content active" id="basic">
+            <h3>The Essential fit</h3>
+            <p>Quality fabrics with clean finishing for everyday wear. Includes: Cashmere, German Wool, Australian Wool...</p>
+          </div>
+          <div class="pricing-content" id="medium">
+            <h3>Signature Style.</h3>
+            <p>Premium fabrics with enhanced tailoring and detailing. Includes: Jonkoso, Lana Wool, Cashmere 7 stars...</p>
+          </div>
+          <div class="pricing-content" id="premium">
+            <h3>Luxury couture.</h3>
+            <p>High-end bespoke designs made for elegance and distinction. Includes: William Marks, Swiss, Bespoke...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FEATURES TAB -->
+    <div class="tab-content" id="features">
+      <div class="feature-cards">
+        <button class="feature-card" data-target="feature-frontend"><h2>Quality Fabrics</h2></button>
+        <button class="feature-card" data-target="feature-mobile"><h2>Expert Tailoring</h2></button>
+        <button class="feature-card" data-target="feature-backend"><h2>Customer Experience</h2></button>
+      </div>
+
+      <div class="feature-contents">
+        <div class="feature-content" id="feature-frontend"><p>We use carefully selected materials for comfort and durability.</p></div>
+        <div class="feature-content" id="feature-mobile"><p>Skilled craftsmanship ensures every piece fits perfectly.</p></div>
+        <div class="feature-content" id="feature-backend"><p>From consultation to delivery, we prioritize your satisfaction.</p></div>
+      </div>
+    </div>
+
+    <!-- CONTACT TAB -->
+    <div class="tab-content" id="contact">
+      <button class="open-modal">Book a Fitting</button>
+
+      <div class="modal-overlay">
+        <div class="modal">
+          <button class="close-modal">&times;</button>
+          <h2>Book a fitting with us</h2>
+          <p>Schedule a fitting session and experience premium fashion tailored to you.</p>
+        </div>
+      </div>
+
+      <button id="emailButton">Contact Us</button>
+      <p id="emailInfo" class="email">
+        Email: wallexino.official@gmail.com <br>
+        LinkedIn: Adeoti Muktar Adewale <br>
+        WhatsApp: 08147324876
+      </p>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <button id="footerEmailButton">Email Us</button>
+    <p id="footerEmailInfo" class="email">wallexino.official@gmail.com</p>
+  </footer>
+
+  <script src="fashion.js"></script>
+</body>
+</html>
+
+
