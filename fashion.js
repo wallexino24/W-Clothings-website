@@ -162,7 +162,10 @@ const myTabs = document.querySelector('.tabs');
 tabIcon?.addEventListener('click', () => myTabs.classList.toggle('active'));
 
 
+
 // ========= for the add to cart ======= //
+
+let cart = [];
 
 const cartButton = document.querySelectorAll('.add-to-cart');
 const cartId = document.getElementById("cartButton");
@@ -171,10 +174,10 @@ cartButton.forEach(button => {
 	button.addEventListener('click', () => {
 
 		const name = button.dataset.name.toLowerCase();
-		const price = button.dataset.price;
+		const price = Number(button.dataset.price);
 		const image = button.dataset.image;
 
-		const product = {
+			const product = {
 			name,
 			price: Number(price),
 			image
@@ -198,6 +201,7 @@ cartButton.forEach(button => {
 		//=== Change button when clicked ===// 
 			button.textContent = "✅";
 			button.disabled = true;
+
 
 		});
 });
